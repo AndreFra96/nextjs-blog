@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
+import Profile from '../components/navbar'
 
 export default function Home({
   allPostsData
@@ -22,6 +23,10 @@ export default function Home({
       </Head>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
+        <p></p>
+        <p>
+          <Link href={"/user/profile"}>Profilo</Link>
+        </p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
