@@ -14,7 +14,7 @@ export default function Profile() {
         user ? (
             <div className={navbarCss.wrapper}>
                 {/* <h2>{user.name}</h2> */}
-                <div className={utilsCss.paddingRight10px}>{user.email}</div>
+                <a className={utilsCss.paddingRight10px} href="/api/auth/me">{user.email}</a>
                 <a className={utilsCss.paddingRight10px} href="/api/auth/logout">Logout</a>
                 {/* <Image src={user.picture} alt={user.name} width="100" height="100"></Image> */}
             </div>
